@@ -1,0 +1,58 @@
+footer {
+background-color: var(--colorSec); /*Don #472E1C;*/
+padding-top:0px;
+}
+.footer-container, .footer-container a, .footer-container span {
+    color: #FFF;
+}
+#full_width-830886783 {
+background:rgba(0,0,0,.35);
+}
+
+/* Don's Custom CSS Below*/
+
+/* Set the center column to be 100 x character height wide */
+#content_column.col.center-col.watermark {
+    max-width: 100rem !important;
+}
+
+/* Force the same gap at the top of the center column as at the bottom */
+.top-container {
+margin-bottom:10px;
+}
+
+/* Force the background color of the Contact Us page to show through */
+/* Default backgound is near while inside the lined area */
+.contact-detail-box {
+    background-color: transparent !important;
+}
+
+/* Omitted currently
+:root {
+    --highlightTer: #2B2E36;
+    --highlightSec: #9f373e;
+    --highlightPri: #4d5362;
+    --colorQua: #2B2E36;
+    --colorTer: #b6454d;
+    --colorSec: #472E1C;  #9E373E; 
+    --colorPri: #D1B993;
+}*/
+
+/* Omitted currently
+** Forces the menu items background to be transparent, omitted currently
+ul.site-menu li {
+   background-color: transparent; #63379e
+} */
+
+/* Force left-sidebar to 100% width */
+aside.col.left-col {
+  max-width: 100%;
+}
+
+/* Force the Contact Us page to not include the club address, etc */
+.club-info-h2.contact-h2 {
+  display: none;
+}
+.contact-detail-box.club-info-box.contact-address-box {
+  display: none;
+}
