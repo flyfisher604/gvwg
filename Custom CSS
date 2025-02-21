@@ -72,3 +72,19 @@ section.bottom-container {
   background: linear-gradient(to top, transparent, black) 0% 0% / 100% 100%,
   url(//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/wide-forest-background_696472908.png) center / 100% 100%;
 }
+
+/* THIS MAY NOT BE TARGETED ENOUGH */
+/* Attempting to get rid of some of the grey text on admin screens */
+.field-label,
+.field-label-left,
+.field-label-left label,
+.field-note,
+.content-sub-header-2,
+.channel-label,
+.text-counter,
+.search-panel legend,
+.form-row .note,
+.form-row .info,
+.search-note {
+    color: inherit !important;
+}
