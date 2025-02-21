@@ -56,3 +56,13 @@ aside.col.left-col {
 .contact-detail-box.club-info-box.contact-address-box {
   display: none;
 }
+
+/* Force the background-image on the site header to use full height
+** and width, and to not scale uniformly. Actual back-ground image is 
+** set on the section in the look-n-feel */
+section.top-container {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/mountain_backdrop_1282875347.png");
+} 
