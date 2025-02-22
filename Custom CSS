@@ -1,90 +1,95 @@
 footer {
-background-color: var(--colorSec); /*Don #472E1C;*/
-padding-top:0px;
-}
-.footer-container, .footer-container a, .footer-container span {
-    color: #FFF;
-}
-#full_width-830886783 {
-background:rgba(0,0,0,.35);
-}
-
-/* Don's Custom CSS Below*/
-
-/* Set the center column to be 100 x character height wide */
-#content_column.col.center-col.watermark {
-    max-width: 100rem !important;
-}
-
-/* Force the same gap at the top of the center column as at the bottom */
-.top-container {
-margin-bottom:10px;
-}
-
-/* Force the background color of the Contact Us page to show through */
-/* Default backgound is near while inside the lined area */
-.contact-detail-box {
-    background-color: transparent !important;
-}
-
-/* Omitted currently
-:root {
-    --highlightTer: #2B2E36;
-    --highlightSec: #9f373e;
-    --highlightPri: #4d5362;
-    --colorQua: #2B2E36;
-    --colorTer: #b6454d;
-    --colorSec: #472E1C;  #9E373E; 
-    --colorPri: #D1B993;
-}*/
-
-/* Omitted currently
-** Forces the menu items background to be transparent, omitted currently
-ul.site-menu li {
-   background-color: transparent; #63379e
-} */
-
-/* Force left-sidebar to 100% width */
-aside.col.left-col {
-  max-width: 100%;
-}
-
-/* Force the Contact Us page to not include the club address, etc */
-.club-info-h2.contact-h2 {
-  display: none;
-}
-.contact-detail-box.club-info-box.contact-address-box {
-  display: none;
-}
-
-/* Force the background-image on the site header to use full height
-** and width, and to not scale uniformly. Actual back-ground image is 
-** set on the section in the look-n-feel */
-section.top-container {
-  background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  background-image: url("//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/mountain_backdrop_1282875347.png");
-} 
-
-section.bottom-container {
-  width: 100%; height: 100%;
-  background: linear-gradient(to top, transparent, black) 0% 0% / 100% 100%,
-  url(//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/wide-forest-background_696472908.png) center / 100% 100%;
-}
-
-/* THIS MAY NOT BE TARGETED ENOUGH */
-/* Attempting to get rid of some of the grey text on admin screens */
-.field-label,
-.field-label-left,
-.field-label-left label,
-.field-note,
-.content-sub-header-2,
-.channel-label,
-.text-counter,
-.search-panel legend,
-.form-row .note,
-.form-row .info,
-.search-note {
-    color: inherit !important;
-}
+  background-color: var(--colorSec); /*Don #472E1C;*/
+  padding-top:0px;
+  }
+  .footer-container, .footer-container a, .footer-container span {
+      color: #FFF;
+  }
+  #full_width-830886783 {
+  background:rgba(0,0,0,.35);
+  }
+  
+  /* Don's Custom CSS Below*/
+  
+  /* Set the center column to be 100 x character height wide */
+  #content_column.col.center-col.watermark {
+      max-width: 100rem !important;
+  }
+  
+  /* Force the same gap at the top of the center column as at the bottom */
+  .top-container {
+  margin-bottom:10px;
+  }
+  
+  /* Force the background color of the Contact Us page to show through */
+  /* Default backgound is near while inside the lined area */
+  .contact-detail-box {
+      background-color: transparent !important;
+  }
+  
+  /* Omitted currently
+  :root {
+      --highlightTer: #2B2E36;
+      --highlightSec: #9f373e;
+      --highlightPri: #4d5362;
+      --colorQua: #2B2E36;
+      --colorTer: #b6454d;
+      --colorSec: #472E1C;  #9E373E; 
+      --colorPri: #D1B993;
+  }*/
+  
+  /* Omitted currently
+  ** Forces the menu items background to be transparent, omitted currently
+  ul.site-menu li {
+     background-color: transparent; #63379e
+  } */
+  
+  /* Force left-sidebar to 100% width */
+  aside.col.left-col {
+    max-width: 100%;
+  }
+  
+  /* Force the Contact Us page to not include the club address, etc */
+  .club-info-h2.contact-h2 {
+    display: none;
+  }
+  .contact-detail-box.club-info-box.contact-address-box {
+    display: none;
+  }
+  
+  /* Force the background-image on the site header to use full height
+  ** and width, and to not scale uniformly. Actual back-ground image is 
+  ** set on the section in the look-n-feel */
+  
+  section.top-container {
+    width: 100%; height: 100%;
+    background: url("//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/mountain_backdrop_1282875347.png") center / 100% 100%,
+    linear-gradient(to top, transparent 0%, transparent 55%, #0D1B2A 100%) 0% 0% / 100% 100%;
+  }
+  
+  section.bottom-container {
+    width: 100%; height: 100%;
+    background: url(//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/wide-forest-background_696472908.png) center / 100% 100%,
+  linear-gradient(to top, transparent 0%, transparent 30%, #0D1B2A 98%, transparent 100%) 0% 0% / 100% 100%;
+  }
+  
+  
+  /* THIS MAY NOT BE TARGETED ENOUGH */
+  /* Attempting to get rid of some of the grey text on admin screens */
+  .field-label, .field-label-left, .field-label-left label,
+  .field-note,
+  .content-sub-header-2,
+  .channel-label,
+  .text-counter,
+  .search-panel legend,
+  .form-row .note, .form-row .info,
+  .search-note,
+  .no-results,
+  .description-panel,
+  .search-results-header,
+  .interest-category-description,
+  .card-title, .card-title a,
+  .small-field-label, .small-field-label-indented {
+      color: inherit !important;
+  }
+  
