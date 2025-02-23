@@ -12,8 +12,10 @@ footer {
   /* Don's Custom CSS Below*/
   
   /* Set the center column to be 100 x character height wide */
+  /* Force it to take 75% of the available width */
   #content_column.col.center-col.watermark {
       max-width: 100rem !important;
+      flex: 1 0 75%
   }
   
   /* Force the same gap at the top of the center column as at the bottom */
@@ -92,4 +94,23 @@ footer {
   .small-field-label, .small-field-label-indented {
       color: inherit !important;
   }
+
+/* Force the left and right columns to disappear when on a smaller device */
+@media (max-width: 1024px) {
+  #content_column.col.center-col.watermark {
+      max-width: 900px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+    .left-col {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .right-col {
+        display: none !important;
+    }
+}
   
