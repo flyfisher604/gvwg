@@ -102,15 +102,59 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
-    .left-col {
-        display: none !important;
-    }
-}
-
-@media (max-width: 1024px) {
-    .right-col {
+@media (max-width: 1200px) {
+    .left-col, .right-col {
         display: none !important;
     }
 }
   
+/* Don's Custom CSS Above*/
+
+/* Steve's Custom CSS Below*/
+/* Styling for Resources Custom Page*/
+
+#mySearchInput {  
+  background-image: url('//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/searchicon_1782392810.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: none; /* Add a grey border */  
+  border-style:none;
+  outline:none;  
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+
+/* filtering                                                                                                 */
+.filterDiv {  
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.filter_btn {
+  border-radius: 1px;
+  border:medium;
+  background: none;
+  outline: none;
+  font-size:16px;  
+  cursor: pointer;
+}
+
+.filter_btn:hover {
+  font-style:italic;
+}
+
+.filter_btn.active {  
+  font-style:italic;
+}
