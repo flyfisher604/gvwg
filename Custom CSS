@@ -133,7 +133,8 @@ section.bottom-container {
 .info-message,
 .list-view-link,
 .manager-table td a, .manager-table th a,
-.field-note-indented {
+.field-note-indented, 
+.bio-box a {
   color: inherit !important;
 }
 
@@ -158,6 +159,19 @@ section.bottom-container {
 .calendar-grid-day,
 .biz-card-inner {
   background-color: whitesmoke !important;
+}
+
+/*
+** Change the Carousel so that it is 250px high and that the image is not stretched to fill the window.
+** This change is not targeted and will impact all Carousels and UI that use the looper class.
+*/
+.looper .itemimage {
+  background-size: contain !important;  
+  background-repeat: no-repeat !important;
+}
+
+.looper, .looper .item, .looper .itemimage, .looper .layout-wrapper {
+  height: 250px !important;
 }
 
 /* Force the left and right columns to disappear when on a smaller device */
