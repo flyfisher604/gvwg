@@ -1,134 +1,220 @@
+/* Starting with what the template colors gave us */
+:root {
+  --colorPri: #02385a;
+
+  /* was hsl(202.74deg 57.58% 32.35%) */
+  --colorSec: hsl(202.74deg 57.58% 48%);
+
+  --colorTer: #3897c6;
+  --colorQua: #3b3b3b;
+  --highlightPri: #52c2d9;
+  --highlightSec: #113d57;
+}
+
+/* These 3 styles related to footer and full_width were here when
+** I started to change things - Don. I'm leaving them for now.
+*/
 footer {
-  background-color: var(--colorSec); /*Don #472E1C;*/
-  padding-top:0px;
-  }
-  .footer-container, .footer-container a, .footer-container span {
-      color: #FFF;
-  }
-  #full_width-830886783 {
-  background:rgba(0,0,0,.35);
-  }
-  
-  /* Don's Custom CSS Below*/
-  
-  /* Set the center column to be 100 x character height wide */
-  /* Force it to take 75% of the available width */
-  #content_column.col.center-col.watermark {
-      max-width: 100rem !important;
-      flex: 1 0 75%
-  }
-  
-  /* Force the same gap at the top of the center column as at the bottom */
-  .top-container {
-  margin-bottom:10px;
-  }
-  
-  /* Force the background color of the Contact Us page to show through */
-  /* Default backgound is near while inside the lined area */
-  .contact-detail-box {
-      background-color: transparent !important;
-  }
-  
-  /* Omitted currently
-  :root {
-      --highlightTer: #2B2E36;
-      --highlightSec: #9f373e;
-      --highlightPri: #4d5362;
-      --colorQua: #2B2E36;
-      --colorTer: #b6454d;
-      --colorSec: #472E1C;  #9E373E; 
-      --colorPri: #D1B993;
-  }*/
-  
-  /* Omitted currently
-  ** Forces the menu items background to be transparent, omitted currently
+  background-color: var(--colorSec);
+  /*Don #472E1C;*/
+  padding-top: 0px;
+}
+
+.footer-container,
+.footer-container a,
+.footer-container span {
+  color: #FFF;
+}
+
+#full_width-830886783 {
+  background: rgba(0, 0, 0, .35);
+}
+
+/*
+** Don's Custom CSS Below
+*/
+
+/*
+** Set the center column to be 100 x character height wide
+** Force the center column to take 75% of the available width (flex)
+** Forces the center column to follow changes made to the root properties
+*/
+#content_column.col.center-col.watermark {
+  max-width: 100rem !important;
+  flex: 1 0 75%;
+  background-color: var(--colorSec) !important;
+}
+
+/* Force the same gap at the top of the center column as at the bottom */
+.top-container {
+  margin-bottom: 10px;
+}
+
+/* Force the background color of the Contact Us page to show through */
+/* Default backgound is near while inside the lined area */
+.contact-detail-box {
+  background-color: transparent !important;
+}
+
+/* Omitted currently
+** Forces the menu items background to be transparent, omitted currently
   ul.site-menu li {
      background-color: transparent; #63379e
-  } */
-  
-  /* Force left-sidebar to 100% width */
-  aside.col.left-col {
-    max-width: 100%;
-  }
-  
-  /* Force the Contact Us page to not include the club address, etc */
-  .club-info-h2.contact-h2 {
-    display: none;
-  }
-  .contact-detail-box.club-info-box.contact-address-box {
-    display: none;
-  }
-  
-  /* Force the background-image on the site header to use full height
-  ** and width, and to not scale uniformly. Actual back-ground image is 
-  ** set on the section in the look-n-feel */
-  
-  section.top-container {
-    width: 100%; height: 100%;
-    background: url("//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/mountain_backdrop_1282875347.png") center / 100% 100%,
+}
+*/
+
+/* Force left-sidebar to 100% width */
+aside.col.left-col {
+  max-width: 100%;
+}
+
+/* Force the Contact Us page to not include the club address, etc */
+.club-info-h2.contact-h2 {
+  display: none;
+}
+
+.contact-detail-box.club-info-box.contact-address-box {
+  display: none;
+}
+
+/* Force the background-image on the site header to use full height
+** and width, and to not scale uniformly. Actual back-ground image is 
+** set on the section in the look-n-feel
+*/
+section.top-container {
+  width: 100%;
+  height: 100%;
+  background: url("//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/mountain_backdrop_1282875347.png") center / 100% 100%,
     linear-gradient(to top, transparent 0%, transparent 55%, #0D1B2A 100%) 0% 0% / 100% 100%;
-  }
-  
-  section.bottom-container {
-    width: 100%; height: 100%;
-    background: url(//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/wide-forest-background_696472908.png) center / 100% 100%,
-  linear-gradient(to top, transparent 0%, transparent 30%, #0D1B2A 98%, transparent 100%) 0% 0% / 100% 100%;
-  }
-  
-  
-  /* THIS MAY NOT BE TARGETED ENOUGH */
-  /* Attempting to get rid of some of the grey text on admin screens */
-  .field-label, .field-label-left, .field-label-left label,
-  .field-note,
-  .content-sub-header-2,
-  .channel-label,
-  .text-counter,
-  .search-panel legend,
-  .form-row .note, .form-row .info,
-  .search-note,
-  .no-results,
-  .description-panel,
-  .search-results-header,
-  .interest-category-description,
-  .card-title, .card-title a,
-  .small-field-label, .small-field-label-indented {
-      color: inherit !important;
-  }
+}
+
+section.bottom-container {
+  width: 100%;
+  height: 100%;
+  background: url(//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/wide-forest-background_696472908.png) center / 100% 100%,
+    linear-gradient(to top, transparent 0%, transparent 30%, #0D1B2A 98%, transparent 100%) 0% 0% / 100% 100%;
+}
+
+
+/* THIS MAY NOT BE TARGETED ENOUGH */
+/*
+** Attempting to get rid of some of the grey/brown text on screens.
+** For all the following classes, force the color to inherit. This means
+** black in all the cases I've found.
+*/
+.field-label,
+.field-label-left,
+.field-label-left label,
+.field-note,
+.content-sub-header-2,
+.channel-label,
+.text-counter,
+.search-panel legend,
+.form-row .note,
+.form-row .info,
+.search-note,
+.no-results,
+.description-panel,
+.search-results-header,
+.interest-category-description,
+.card-title,
+.card-title a,
+.small-field-label,
+.small-field-label-indented,
+#forum_home_wrapper .forum-status-message,
+#forum_home_wrapper .forum-description,
+.primary-desc,
+.disabled-link,
+.membership-panel,
+.limit-text, .interest-profile-desc,
+.interest-sub-desc,
+.form-row .apply-all,
+.status-panel-item,
+.info-message,
+.list-view-link,
+.manager-table td a, .manager-table th a,
+.field-note-indented {
+  color: inherit !important;
+}
+
+/*
+** Inside of ClubExpress we have defined links as having color WhiteSmoke.
+** In some cases, CE has overridden this, which may look fine on there assumed white background,
+** but the colors they choose don't work for us. This targets specific CSS to for it to use
+** our colors
+*/
+#forum_home_wrapper a.forum-link,
+#thread_list_wrapper .subject-link,
+.member-email-panel a,
+#group_container a,
+.preferences-link, .list-panel a {
+  color: WhiteSmoke !important;
+}  
+
+/*
+** Set some of the background whites to a less strong white
+*/
+.widget-card,
+.calendar-grid-day,
+.biz-card-inner {
+  background-color: whitesmoke !important;
+}
 
 /* Force the left and right columns to disappear when on a smaller device */
 @media (max-width: 1024px) {
   #content_column.col.center-col.watermark {
-      max-width: 900px !important;
+    max-width: 900px !important;
   }
 }
 
 @media (max-width: 1200px) {
-    .left-col, .right-col {
-        display: none !important;
-    }
+  .left-col,
+  .right-col {
+    display: none !important;
+  }
 }
-  
+
 /* Don's Custom CSS Above*/
 
 /* Steve's Custom CSS Below*/
 /* Styling for Resources Custom Page*/
 
-#mySearchInput {  
-  background-image: url('//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/searchicon_1782392810.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: none; /* Add a grey border */  
-  border-style:none;
-  outline:none;  
-  margin-bottom: 12px; /* Add some space below the input */
+
+.Resources {
+  font-family: Calibri, Arial, sans-serif;
+  background-color: #252525;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+}
+
+#mySearchInput {
+  background-image: url('//s3.amazonaws.com/ClubExpressClubFiles/182740/graphics/searchicon_1782392810.png');
+  /* Add a search icon to input */
+  background-position: 10px 12px;
+  /* Position the search icon */
+  background-repeat: no-repeat;
+  /* Do not repeat the icon image */
+  width: 100%;
+  /* Full-width */
+  font-size: 16px;
+  /* Increase font-size */
+  padding: 12px 20px 12px 40px;
+  /* Add some padding */
+  border: none;
+  /* Add a grey border */
+  border-style: none;
+  outline: none;
+  margin-bottom: 12px;
+  /* Add some space below the input */
 }
 
 
 /* filtering                                                                                                 */
-.filterDiv {  
+.filterDiv {
   display: none;
 }
 
@@ -144,17 +230,17 @@ footer {
 /* Style the buttons */
 .filter_btn {
   border-radius: 1px;
-  border:medium;
+  border: medium;
   background: none;
   outline: none;
-  font-size:16px;  
+  font-size: 16px;
   cursor: pointer;
 }
 
 .filter_btn:hover {
-  font-style:italic;
+  font-style: italic;
 }
 
-.filter_btn.active {  
-  font-style:italic;
+.filter_btn.active {
+  font-style: italic;
 }
