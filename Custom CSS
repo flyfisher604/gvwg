@@ -167,6 +167,14 @@ section.bottom-container {
 }
 
 /*
+** Changes so that the treeview in the admin Document Library Manager appear.
+*/
+#treeview_div.tree-panel {
+  background-color: whitesmoke;
+}
+
+
+/*
 ** Set some of the background whites to a less strong white
 */
 .widget-card,
