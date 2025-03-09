@@ -134,7 +134,8 @@ section.bottom-container {
 .list-view-link,
 .manager-table td a, .manager-table th a,
 .field-note-indented, 
-.bio-box a {
+.bio-box a,
+.form-row .note span, .form-row .info {
   color: inherit !important;
 }
 
@@ -151,6 +152,19 @@ section.bottom-container {
 .preferences-link, .list-panel a {
   color: WhiteSmoke !important;
 }  
+
+/*
+** Change the look of error/warning messages to make them more visible.
+** This attempts to make those changes in a very targeted way.
+*/
+#ctl00_ctl00_existing_member_warning_panel.main-error-message {
+  font-size: 14px;
+  background-color: black;
+}
+
+#member_type .main-error-message {
+  padding: 10px 0px 10px 24px;
+}
 
 /*
 ** Set some of the background whites to a less strong white
