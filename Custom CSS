@@ -45,6 +45,7 @@ footer {
   background-color: var(--colorSec) !important;
 }
 
+
 /* Force the same gap at the top of the center column as at the bottom */
 .top-container {
   margin-bottom: 10px;
@@ -54,6 +55,15 @@ footer {
 /* Default backgound is near while inside the lined area */
 .contact-detail-box {
   background-color: transparent !important;
+}
+
+/*
+** When in the editor for a page, force the background to be the same
+** color as our center column so that you can see our WhiteSmoke colored
+** links.
+*/
+#build_container .build-row {
+  background-color: var(--colorSec) !important;
 }
 
 /* Omitted currently
