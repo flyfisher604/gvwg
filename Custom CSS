@@ -150,6 +150,14 @@ section.bottom-container {
 }
 
 /*
+** Fixing the photo album so the description is not gray.
+*/
+.album-desc {
+  color: inherit !important;
+  font-style: italic !important;
+}
+
+/*
 ** Inside of ClubExpress we have defined links as having color WhiteSmoke.
 ** In some cases, CE has overridden this, which may look fine on there assumed white background,
 ** but the colors they choose don't work for us. This targets specific CSS to for it to use
