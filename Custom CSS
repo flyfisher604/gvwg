@@ -145,7 +145,10 @@ section.bottom-container {
 .manager-table td a, .manager-table th a,
 .field-note-indented, 
 .bio-box a,
-.form-row .note span, .form-row .info {
+.form-row .note span, .form-row .info,
+.committee-desc,
+.dropdown-title, .action:not(.attachment-container) a,
+#ctl00_ctl00_results_panel .results-text {
   color: inherit !important;
 }
 
