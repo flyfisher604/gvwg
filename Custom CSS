@@ -148,7 +148,8 @@ section.bottom-container {
 .form-row .note span, .form-row .info,
 .committee-desc,
 .dropdown-title, .action:not(.attachment-container) a,
-#ctl00_ctl00_results_panel .results-text {
+#ctl00_ctl00_results_panel .results-text,
+.required-instruction-text {
   color: inherit !important;
 }
 
@@ -158,6 +159,15 @@ section.bottom-container {
 .album-desc {
   color: inherit !important;
   font-style: italic !important;
+}
+
+/*
+** In ClubExpress the font-size of a link is hardcoded, which means the links don't
+** follow the size of the text they are embedded within. This changes makes the link inherit
+** the font-size of where the link is embedded. MAY NOT BE SPECIFIC ENOUGH
+*/
+a {
+  font-size: inherit;
 }
 
 /*
