@@ -235,6 +235,14 @@ GVWG_Carosel300 {
   height: 300px !important;
 }
 
+/*
+** There are two Registration buttons on the event page, one scrolls to the other button and the other registers you.
+** If both are on screen then nothing happens when you click the first button. The following CSS removes the one that scrolls only.
+*/
+a#ctl00_ctl00_user_actions_register_button {
+    display: none;
+}
+
 /* Force the left and right columns to disappear when on a smaller device */
 @media (max-width: 1024px) {
   #content_column.col.center-col.watermark {
