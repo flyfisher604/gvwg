@@ -11,9 +11,9 @@
   --highlightSec: #113d57;
 }
 
-/* This class forces the content cards of a News Feed to be centred.
+/* This class forces the content cards of a News Feed to be centered.
 ** Selectively apply this class to the News Feed row to force the
-** cards to be centred.
+** cards to be centered.
 */
 .GVWG_News_Cards_Center .widget-wrap
 {
@@ -192,6 +192,10 @@ a {
 .preferences-link, .list-panel a {
   color: WhiteSmoke !important;
 }  
+
+.bottom-container a {
+    color: WhiteSmoke!important;
+}
 
 /*
 ** Change the look of error/warning messages to make them more visible.
