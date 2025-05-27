@@ -11,6 +11,15 @@
   --highlightSec: #113d57;
 }
 
+/* This class forces the content cards of a News Feed to be centred.
+** Selectively apply this class to the News Feed row to force the
+** cards to be centred.
+*/
+.GVWG_News_Cards_Center .widget-wrap
+{
+    justify-content: center;
+}
+
 /* These 3 styles related to footer and full_width were here when
 ** I started to change things - Don. I'm leaving them for now.
 */
