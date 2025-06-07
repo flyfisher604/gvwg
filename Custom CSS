@@ -121,6 +121,8 @@ section.bottom-container {
 ** For all the following classes, force the color to inherit. This means
 ** black in all the cases I've found.
 */
+.thread-list-table .user-area a,
+.thread-table .post-row .user-area a,
 .field-label,
 .field-label-left,
 .field-label-left label,
