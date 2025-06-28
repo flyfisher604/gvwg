@@ -160,7 +160,8 @@ section.bottom-container {
 .committee-desc,
 .dropdown-title, .action:not(.attachment-container) a,
 #ctl00_ctl00_results_panel .results-text,
-.required-instruction-text {
+.required-instruction-text,
+#ctl00_ctl00_message_box {
   color: inherit !important;
 }
 
