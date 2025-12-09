@@ -162,7 +162,8 @@ section.bottom-container {
 #ctl00_ctl00_results_panel .results-text,
 .required-instruction-text,
 #ctl00_ctl00_message_box,
-#refund_policy_panel div {
+#refund_policy_panel div,
+#response_header {
   color: inherit !important;
 }
 
