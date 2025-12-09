@@ -9,6 +9,7 @@
   --colorQua: #3b3b3b;
   --highlightPri: #52c2d9;
   --highlightSec: #113d57;
+  --sysBackground: var(--colorPri); /* Dec 9, 2025: To fix the color of buttons like save/cancel/refresh in event editor, but may have other impacts */
 }
 
 /* This class forces the content cards of a News Feed to be centered.
@@ -344,4 +345,27 @@ a#ctl00_ctl00_user_actions_register_button {
 
 .filter_btn.active {
   font-style: italic;
+}
+/* Steve's Custom CSS Above*/
+
+/* Below is additional custom CSS to support changes made to the UI by CE on Dec 8, 2025 */
+
+#flat_list .post-date, /* Fixes gray date text in blog post list */
+.thread-list-table th, /* Fixes gray text in thread list table headers */
+#thread_list_wrapper .post-counts, /* Fixes gray text in thread post counts */
+#thread_list_wrapper .post-info, /* Fixes gray text in thread post Last Post */
+.card-title .card-status, /* Fixes gray text in forum card titles */
+.card-summary .forum-info /* Fixes gray text in forum info */
+{
+    color: inherit !important;
+}
+
+div.instruction-text /* Fixes instruction text background color so our links color is visible */
+{
+    background-color: #aaa;
+}
+
+.instruction-text.new-instruction-text /* Fixes instruction text so there is a little more space */
+{
+    padding: 2px;
 }
