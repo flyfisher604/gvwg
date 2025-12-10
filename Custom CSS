@@ -369,3 +369,16 @@ div.instruction-text /* Fixes instruction text background color so our links col
 {
     padding: 2px;
 }
+
+.card-viewport-image .card-title a /* Fixes titles on Interest cards that have images */
+{
+    color: #FFF !important;
+}
+.card-contents.no-image .card-title a /* Fixes titles on Interest cards that have NO images */
+{
+    color: #000 !important;
+}
+.card-viewport-image /* Fixes the images that are displayed on Interest cards */
+{
+    background-size: contain !important;
+}
